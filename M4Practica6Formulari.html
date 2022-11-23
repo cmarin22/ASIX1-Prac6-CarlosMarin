@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Enllaç al fitxer External CSS -->
+        <link rel="stylesheet" href="stylesP6Activitat1Carlos.css">
+    </head>
+    <body>
+        <!-- Títol h1 -->
+        <h1>El meu primer formulari</h1>
+        <!-- Subtítol h2 -->
+        <h2 id = "subtitol">Pràctica 6 - Carlos Marín</h2>
+        <!-- formulari, quan executem el submit, s'executaria l'arxiu M4Practica6Resultat.html, blank obra l'arxiu html a una nova pestanya -->
+        <form class = "formulari" action="M4Practica6Resultat.html" target="_blank">
+            <!-- Subtítol h5 -->
+            <h5 class = "subtitol5">Les teves dades personals:</h5>
+            <label for="fname">Nom:</label>
+            <input class = "dada" type="text" id="fname" name="fname">
+            <!-- fname és la variable del servidor -->
+            <!-- for està relacionat amb l'id, name és el nom de la variable per PHP-->
+            <label for="lname">Cognom:</label>
+            <input class = "dada" type="text" id="lname" name="lname">
+            <!-- lname és la variable del servidor -->
+            <!-- for està relacionat amb l'id, name és el nom de la variable per PHP-->
+            <br></br> 
+            <!-- Fent un salt de línia -->
+            <label for="age">Edat:</label>
+            <input class = "dada2" type="number" id="age" name="age" value="0" min="0"></br>
+            <!-- age és la variable del servidor -->
+            <!-- for està relacionat amb l'id, name és el nom de la variable per PHP-->
+            <h5 class = "subtitol5">Marca els llenguatges de programació que més t'agraden:</h5>
+            <h5 class = "subtitol5">hss</h5>
+            <!-- lang1, lang2, lang3 són les variables del servidor -->
+            <!-- for està relacionat amb l'id, name és el nom de la variable per PHP-->
+            <!-- Selecció d'una opció, important, checked no funciona amb Firefox -->
+            <input type="checkbox" id="lang1" name="prog" value="lang1" checked>
+            <label for="lang1">HTML</label></br>
+            <input type="checkbox" id="lang2" name="prog" value="lang2">
+            <label for="lang2">CSS</label></br>
+            <input type="checkbox" id="lang3" name="prog" value="lang3">
+            <label for="lang3">XML</label></br>
+            <h5 class = "subtitol5">Selecciona el cicle formatiu que vols cursar:</h5>
+            <p class="normal">Selecciona el cicle:</p>
+            <!-- cf (cicle formatiu) és la variable del servidor -->
+            <!-- for està relacionat amb l'id, name és el nom de la variable per PHP-->
+            <input type="radio" id="cicle1" name="cf" value="cicle1" checked>
+            <label for="cicle1">ASIX</label></br>
+            <input type="radio" id="cicle2" name="cf" value="cicle2">
+            <label for="cicle2">DAM</label></br>
+            <input type="radio" id="cicle3" name="cf" value="cicle3">
+            <label for="cicle3">DAW</label></br>
+            <label class = "textnormal" for="select">Selecciona el curs:</label>
+            <!-- Hi ha dos opcions a seleccionar, el valor es requerit-->
+            <select name="select" id="select" required>
+                <!-- Per defecte tenim marcat el primer curs -->
+                <option value="firstval" selected>Primer</option>
+                <option value="secondval">Segon</option>
+            </select></br>
+            <!-- Paràgraf -->
+            <p class = "textnormal"><label for="coditext">Observacions:</label></p>
+            <!-- Àrea de text per escriure el missatge -->
+            <textarea id="coditext" class="textnormal" name="coditext" rows="10" cols="50">Escriu el teu missatge</textarea>
+            <br>
+            <!-- Enviem les dades a action -->
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html> 

@@ -1,0 +1,60 @@
+h1
+{
+    font-weight: bold;
+    /*Text en negreta*/
+    color: #ff8000;
+    /*Color taronga pels caràcters*/
+    text-align: center;
+    /* Els caràcters estan en el centre del quadrat*/
+}
+#subtitol
+{
+    color: #1500b8;
+    /*Color lila pels caràcters*/
+    text-align: center;
+    /* Els caràcters estan en el centre del quadrat*/
+}
+.subtitol5
+{
+    font-weight: bold;
+    /*Text en negreta*/
+    color: 	#000000;
+    /*Color lila pels caràcters*/
+    text-align: center;
+    /* Els caràcters estan en el centre del quadrat*/
+}
+.formulari
+{
+    text-align: center;
+    /* Els caràcters estan en el centre del quadrat*/
+}
+.dada
+{
+    width: 200px;
+}
+.dada2
+{
+    width: 300px;
+}
+p.normal
+{
+    font-weight: normal;
+    font-size: 15px;
+}
+#size1
+{
+    font-size: 15px;
+}
+.textnormal
+{
+    font-weight: normal;
+    font-size: 15px;
+}
+#festa
+{
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
